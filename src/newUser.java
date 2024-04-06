@@ -15,13 +15,12 @@ public class newUser {
 
             boolean accessOrBank = false;
 
-            System.out.println("enter your account:");
-            int verificationBankAccountNumber = Reading.nextInt();
             System.out.println("enter your name:");
             String nowName = Reading.nextLine();
             System.out.println("enter your password");
             String nowPassword = Reading.nextLine();
-
+            System.out.println("enter your account:");
+            int verificationBankAccountNumber = Reading.nextInt();
 
             if (bankAccountNumber == verificationBankAccountNumber && nowPassword.equals(password) ) {
                 System.out.println("Account Validate");
