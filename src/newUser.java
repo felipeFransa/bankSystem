@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class newUser {
         public static void main(String[] args) {
 
-            Scanner Reading = new Scanner(System.in);
+            Scanner ReadingText = new Scanner(System.in);
+            Scanner ReadingNumber = new Scanner(System.in);
 
             String firstName = "Felipe";
             int age = 27;
@@ -16,11 +17,11 @@ public class newUser {
             boolean accessOrBank = false;
 
             System.out.println("enter your name:");
-            String nowName = Reading.nextLine();
+            String nowName = ReadingText.nextLine();
             System.out.println("enter your password");
-            String nowPassword = Reading.nextLine();
+            String nowPassword = ReadingText.nextLine();
             System.out.println("enter your account:");
-            int verificationBankAccountNumber = Reading.nextInt();
+            int verificationBankAccountNumber = ReadingNumber.nextInt();
 
             if (bankAccountNumber == verificationBankAccountNumber && nowPassword.equals(password) ) {
                 System.out.println("Account Validate");
