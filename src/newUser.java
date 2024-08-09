@@ -14,8 +14,6 @@ public class newUser {
             String password = "a8f3s3f3";
             int bankAccountNumber = 5071;
 
-            boolean accessOrBank = false;
-
             System.out.println("enter your name:");
             String nowName = ReadingText.nextLine();
             System.out.println("enter your password");
@@ -25,12 +23,9 @@ public class newUser {
 
             if (bankAccountNumber == verificationBankAccountNumber && nowPassword.equals(password) ) {
                 System.out.println("Account Validate");
-                accessOrBank = true;
+                System.out.println(nowName);
             }else {
                 System.out.println("Account invalidate");
-            }
-            if (accessOrBank){
-                System.out.println("Welcome " +firstName);
             }
         }
 }
