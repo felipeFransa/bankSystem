@@ -1,14 +1,19 @@
 package br.com.felipe.bankSystem.main;
 
+import br.com.felipe.bankSystem.model.Account;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner Reading = new Scanner(System.in);
         String firstName = "Felipe Fransa";
-        int age = 27;
-        String password = "a8f3s3f3";
-        String typeAccount = "Corrente";
+        Account account = new Account();
+        account.setAccountAG(5173);
+        account.setNumberAccount(324567);
+        account.setTypeAccount("Corrente");
+
+        String typeAccount = account.getTypeAccount();
         double accountBalance = 3.200;
         int option = 0;
 

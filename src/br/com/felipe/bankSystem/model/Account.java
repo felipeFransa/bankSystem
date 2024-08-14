@@ -3,6 +3,15 @@ package br.com.felipe.bankSystem.model;
 public class Account {
     private int numberAccount;
     private int accountAG;
+    private String typeAccount;
+
+    public String getTypeAccount() {
+        return typeAccount;
+    }
+
+    public void setTypeAccount(String typeAccount) {
+        this.typeAccount = typeAccount;
+    }
 
     public int getNumberAccount() {
         return numberAccount;
