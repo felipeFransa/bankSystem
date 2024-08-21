@@ -36,7 +36,7 @@ public class newUser {
 
             if (bankAccountNumber == verificationBankAccountNumber && nowPassword.equals(password) ) {
                 System.out.println("Account Validate");
-                System.out.println(user.getName()+" Seja bem vindo, sua conta "+user.getNumberAccount());
+                System.out.println(user.getName()+" welcome "+user.getNumberAccount());
             }else {
                 System.out.println("Account invalidate");
             }
