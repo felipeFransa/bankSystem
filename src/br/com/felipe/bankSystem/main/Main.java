@@ -14,7 +14,7 @@ public class Main {
         account.setTypeAccount("Corrente");
 
         String typeAccount = account.getTypeAccount();
-        double accountBalance = 3.200;
+        double accountBalance = 5.000;
         int option = 0;
 
         System.out.println("************");

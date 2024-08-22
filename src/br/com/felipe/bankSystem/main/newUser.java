@@ -14,6 +14,8 @@ public class newUser {
             String password = "a8f3s3f3";
             int bankAccountNumber = 5071;
 
+            System.out.println("register new user:");
+
             System.out.println("enter your name:");
             String nowName = readingText.nextLine();
             user.setName(nowName);
