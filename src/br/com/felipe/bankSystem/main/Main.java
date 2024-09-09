@@ -1,25 +1,22 @@
 package br.com.felipe.bankSystem.main;
 
-import br.com.felipe.bankSystem.model.Account;
+import br.com.felipe.bankSystem.model.User;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner Reading = new Scanner(System.in);
-        String firstName = "Felipe Fransa";
-        Account account = new Account();
-        account.setAccountAG(5173);
-        account.setNumberAccount(324567);
-        account.setTypeAccount("Corrente");
+        User user = new User();
 
-        String typeAccount = account.getTypeAccount();
+        user.setName("Felipe França");
+        user.setTypeAccount("Corrente");
         double accountBalance = 5.000;
         int option = 0;
 
         System.out.println("************");
-        System.out.println("\nName client: " + firstName);
-        System.out.println("Type Account: " + typeAccount);
+        System.out.println("\nName client: " +user.getName());
+        System.out.println("Type Account: " +user.getTypeAccount());
         System.out.println("Balance: " + accountBalance);
         System.out.println("\n************");
 
