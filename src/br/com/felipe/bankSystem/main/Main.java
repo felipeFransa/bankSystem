@@ -2,12 +2,14 @@ package br.com.felipe.bankSystem.main;
 
 import br.com.felipe.bankSystem.model.User;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner Reading = new Scanner(System.in);
         User user = new User();
+        LocalDate nowDate = LocalDate.now();
 
         user.setName("Felipe França");
         user.setTypeAccount("Corrente");
