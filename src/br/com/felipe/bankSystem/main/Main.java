@@ -36,8 +36,10 @@ public class Main {
 
             if (option == 1) {
                 System.out.println("Balance: " +accountBalance);
+                System.out.println(nowDate);
             } else if (option == 2) {
                 System.out.println("What amount do you want to transfer?");
+                System.out.println(nowDate);
                 double value = Reading.nextDouble();
                 if (value > accountBalance) {
                     System.out.println("Not on balance");
