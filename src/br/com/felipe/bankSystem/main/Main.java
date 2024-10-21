@@ -43,9 +43,11 @@ public class Main {
                 double value = Reading.nextDouble();
                 if (value > accountBalance) {
                     System.out.println("Not on balance");
+                    System.out.println(nowDate);
                 }else {
                     accountBalance =- value;
                     System.out.println("New balance now: " + accountBalance);
+                    System.out.println(nowDate);
                 }
             } else if (option == 3) {
                 System.out.println("enter the transfer amount: ");
