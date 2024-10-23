@@ -2,6 +2,7 @@ package br.com.felipe.bankSystem.main;
 
 import br.com.felipe.bankSystem.model.User;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class MainUser {
@@ -9,6 +10,7 @@ public class MainUser {
         Scanner reading = new Scanner(System.in);
         Scanner readingNumber = new Scanner(System.in);
         User user = new User();
+        LocalDate myDate = LocalDate.now();
 
         System.out.println("enter your name:");
         String name = reading.nextLine();
@@ -40,6 +42,7 @@ public class MainUser {
         System.out.println(user.getNumberAccount());
         System.out.println(user.getValueAccount());
         System.out.println(user.getTypeAccount());
+        System.out.println(myDate);
 
     }
 }
