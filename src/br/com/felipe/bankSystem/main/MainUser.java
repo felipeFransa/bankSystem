@@ -7,13 +7,15 @@ import java.util.Scanner;
 
 public class MainUser {
     public static void main(String[] args) {
-        Scanner reading = new Scanner(System.in);
+        Scanner readingText = new Scanner(System.in);
         Scanner readingNumber = new Scanner(System.in);
         User user = new User();
         LocalDate myDate = LocalDate.now();
 
+        System.out.println("register new user:");
+
         System.out.println("enter your name:");
-        String name = reading.nextLine();
+        String name = readingText.nextLine();
         user.setName(name);
 
         System.out.println("enter your age:");
@@ -21,7 +23,7 @@ public class MainUser {
         user.setAge(age);
 
         System.out.println("enter your password:");
-        String password = reading.nextLine();
+        String password = readingText.nextLine();
         user.setPassword(password);
 
         System.out.println("enter your AG number account");
@@ -29,7 +31,7 @@ public class MainUser {
         user.setNumberAccount(numberAccount);
 
         System.out.println("enter your type account");
-        String typeAccount = reading.nextLine();
+        String typeAccount = readingText.nextLine();
         user.setTypeAccount(typeAccount);
 
         System.out.println("enter your value account:");
