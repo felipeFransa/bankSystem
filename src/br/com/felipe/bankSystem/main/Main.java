@@ -3,6 +3,7 @@ package br.com.felipe.bankSystem.main;
 import br.com.felipe.bankSystem.model.User;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Scanner;
 
 public class Main {
@@ -10,6 +11,7 @@ public class Main {
         Scanner Reading = new Scanner(System.in);
         User user = new User();
         LocalDate nowDate = LocalDate.now();
+        LocalTime nowTime = LocalTime.now();
 
         user.setName("Felipe França");
         user.setTypeAccount("Corrente");
@@ -37,17 +39,21 @@ public class Main {
             if (option == 1) {
                 System.out.println("Balance: " +accountBalance);
                 System.out.println(nowDate);
+                System.out.println(nowTime);
             } else if (option == 2) {
                 System.out.println("What amount do you want to transfer?");
                 System.out.println(nowDate);
+                System.out.println(nowTime);
                 double value = Reading.nextDouble();
                 if (value > accountBalance) {
                     System.out.println("Not on balance");
                     System.out.println(nowDate);
+                    System.out.println(nowTime);
                 }else {
                     accountBalance =- value;
                     System.out.println("New balance now: " + accountBalance);
                     System.out.println(nowDate);
+                    System.out.println(nowTime);
                 }
             } else if (option == 3) {
                 System.out.println("enter the transfer amount: ");

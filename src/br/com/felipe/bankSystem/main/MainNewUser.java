@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Scanner;
 
-public class newUser {
+public class MainNewUser {
         public static void main(String[] args) {
 
             Scanner readingText = new Scanner(System.in);
