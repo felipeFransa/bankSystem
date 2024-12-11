@@ -62,6 +62,8 @@ public class Main {
                 System.out.println("Your current balance is: " +accountBalance);
             } else if (option != 4){
                 System.out.println("Option invalidate.");
+                System.out.println(nowDate);
+                System.out.println(nowTime);
             }
         }
     }
